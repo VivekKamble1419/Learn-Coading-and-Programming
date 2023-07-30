@@ -1,0 +1,88 @@
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,200;1,400&family=Source+Code+Pro:ital,wght@0,500;1,300&display=swap');
+
+.section5{
+    background-color:  #fff4a3;
+    height: 100vh;
+    width: 100%;
+}
+.section5 h1{
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    padding-top: 15vh;
+    font-size:40px;
+    font-weight: 6000;
+}
+.roadmaps{
+    margin-top: 5%;
+    margin-left: 20px;
+    margin-right: 20px;
+    justify-content: center;
+    display: flex;
+    gap: 5%;
+}
+.roadmaps div{
+    height: 200px;
+    width: 100%;
+}
+.roadmaps div h2{
+    font-family: 'Source Code Pro', monospace;
+    padding: 10px;
+    text-align: center;
+    font-size: 14px;
+}
+.roadmaps div{
+    height: 55vh;
+}
+.roadmaps div:hover{
+box-shadow: 10px 10px 10px 10px rgba(125, 123, 123, 0.757);
+opacity: 15;
+cursor: pointer;
+}    
+.roadmaps a img{
+    
+    border-radius: 2%;
+    height: 200px;
+    width: 100%;
+}
+
+footer{
+    height: 50vh;
+}
+/* form starts */
+footer .feedback-form div{
+gap: 5;
+}
+
+@media (max-width:700px) {
+    .section5{
+       
+        height: auto;
+    }
+    .roadmaps{
+        display: block;
+    }
+    .roadmaps a img{
+        align-items: center;
+        margin-left: 10%;
+        border-radius: 2%;
+        height: 250px;
+        width: 80%;
+    }
+    .roadmaps div:hover{
+        box-shadow: none;
+        cursor: pointer;
+        }  
+
+}
+
+@media (max-width:490px) {
+
+.section5 h1{
+    font-size: 30px;
+}
+.roadmaps div h2{
+ 
+    font-size: 15px;
+}
+
+}

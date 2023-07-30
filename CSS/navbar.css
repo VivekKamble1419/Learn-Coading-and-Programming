@@ -1,0 +1,110 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    list-style: none;
+}
+nav{
+    position:fixed;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background: white;
+    height: 65px;
+    width: 100%;
+    margin-bottom: 50px;
+}
+.logo{
+color: black;
+font-size: 35px;
+font-family: cursive;
+padding: 0px 20px 0 50px;
+font-weight: bold;
+}
+/* used to arrange all unordered list to right */
+nav ul {
+    float: right;
+    margin-right: 20px;
+}
+/* arrange Ul in proper way in line  */
+nav ul li{
+    display: inline-block;
+    line-height: 60px;
+    margin: 0 7px;
+}
+nav ul li a{
+    
+    font-size: 17px;
+    color: black;
+    padding: 7px 13px;
+    border-radius: 5px;
+    text-transform: uppercase;
+}
+a.active,a:hover{
+background: rgb(192, 239, 248);
+transform: 0.5s;
+}
+nav  img{
+    align-items: center;
+    margin-top: 5px;
+    max-height: 35px;
+    cursor: pointer;
+    display: none;
+}
+#check{
+    display: none;
+}
+
+
+/* Media Querees start for max width 1100 */
+@media (max-width:1000px) {
+    nav{
+       position:fixed;
+       width: 100%;
+    }
+    .logo{
+        text-align: center;
+    }
+    nav ul{
+        position:fixed;
+        float: none;
+        text-align: center;
+        left: -100%;
+        transition: all .5s;
+        background: none;
+    }
+    nav ul li{
+        display: grid;
+        line-height: 100px;
+    }
+    nav  img{
+        display: block;
+        float: right;
+        
+    }
+    /* it is used for responsive website to arrange all list items in proper way */
+    #check:checked ~ ul{
+        background: white;
+        width: 100%;
+        height: 100vh;
+        left: 0;
+    }
+    .annimation{
+        font-size: 60px;
+    }
+   
+}
+
+/* Media Querees start  for max width 343*/
+
+@media (max-width:343px){
+    .logo{
+        padding: 10px;
+        }
+        nav  img{
+            margin-top: 10px;
+            max-height: 30px;
+        }
+        .annimation{
+            font-size: 30px;
+        }
+}
